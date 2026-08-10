@@ -58,6 +58,8 @@ FORBIDDEN_TEXT = (
     "xoxb-",
     "AKIA",
 )
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     commands = parser.add_subparsers(dest="command", required=True)
@@ -438,9 +440,17 @@ def _architecture_svg(receipt: dict[str, object]) -> str:
     summary = cast(dict[str, object], receipt["summary"])
     ledger = cast(list[dict[str, object]], receipt["ledger"])
     stages = (
-        ("01", "BOUNDED ROUND", f"{summary['clients']} clients · {summary['dimensions']} coordinates"),
+        (
+            "01",
+            "BOUNDED ROUND",
+            f"{summary['clients']} clients · {summary['dimensions']} coordinates",
+        ),
         ("02", "ANALYZER SORT", "ordered (value, client_id) pairs"),
-        ("03", "RANK WITNESSES", f"{summary['included_cells']} included · {summary['excluded_cells']} excluded"),
+        (
+            "03",
+            "RANK WITNESSES",
+            f"{summary['included_cells']} included · {summary['excluded_cells']} excluded",
+        ),
         ("04", "HASHED RECEIPT", f"{len(ledger)} append-only ledger entries"),
         ("05", "PAIRWISE REPLAY", "independent O(n²) rank counts"),
     )
@@ -518,7 +528,13 @@ def _rank_witness_svg(receipt: dict[str, object]) -> str:
 
 def _shift_comparison_svg(receipt: dict[str, object]) -> str:
     coordinates = cast(list[dict[str, object]], receipt["coordinates"])
-    maximum = max(1e-12, max(abs(_ratio_float(cast(dict[str, object], item["arithmetic"])["trimmed_minus_mean"])) for item in coordinates))
+    maximum = max(
+        1e-12,
+        max(
+            abs(_ratio_float(cast(dict[str, object], item["arithmetic"])["trimmed_minus_mean"]))
+            for item in coordinates
+        ),
+    )
     rows = []
     for index, coordinate in enumerate(coordinates):
         arithmetic = cast(dict[str, object], coordinate["arithmetic"])
@@ -562,8 +578,14 @@ def _exclusion_map_svg(receipt: dict[str, object]) -> str:
     rows = []
     for row_index, coordinate in enumerate(coordinates):
         y = 195 + row_index * 54
-        low_ids = {str(item["client_id"]) for item in cast(list[dict[str, object]], coordinate["low_excluded"])}
-        high_ids = {str(item["client_id"]) for item in cast(list[dict[str, object]], coordinate["high_excluded"])}
+        low_ids = {
+            str(item["client_id"])
+            for item in cast(list[dict[str, object]], coordinate["low_excluded"])
+        }
+        high_ids = {
+            str(item["client_id"])
+            for item in cast(list[dict[str, object]], coordinate["high_excluded"])
+        }
         cells = []
         for column, client_id in enumerate(client_ids):
             x = 224 + column * 80
