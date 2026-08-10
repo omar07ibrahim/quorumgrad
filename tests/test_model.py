@@ -66,7 +66,10 @@ def test_invalid_root_values_are_rejected(key: str, value: object) -> None:
         parse_round(document)
 
 
-@pytest.mark.parametrize("missing", ["format", "round_id", "scale", "trim", "dimensions", "clients"])
+@pytest.mark.parametrize(
+    "missing",
+    ["format", "round_id", "scale", "trim", "dimensions", "clients"],
+)
 def test_missing_root_fields_are_rejected(missing: str) -> None:
     document = _valid()
     del document[missing]
@@ -157,7 +160,7 @@ def test_trim_requires_a_nonempty_center(count: int, trim: int) -> None:
         {"client_id": f"client-{index}", "update": [index, index]}
         for index in range(count)
     ]
-    with pytest.raises(ContractError, match="2 \* trim"):
+    with pytest.raises(ContractError, match=r"2 \* trim"):
         parse_round(document)
 
 

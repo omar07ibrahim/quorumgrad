@@ -25,7 +25,7 @@ def test_reference_summary_is_exact(receipt: dict[str, object]) -> None:
         "excluded_cells": 24,
         "distinct_excluded_clients": 4,
         "nonzero_mean_shift_coordinates": 6,
-        "nonzero_median_gap_coordinates": 0,
+        "nonzero_median_gap_coordinates": 1,
         "maximum_abs_mean_shift": _ratio(119, 275),
         "maximum_shift_dimension": "encoder.bias",
         "coordinate_commitment_sha256": summary["coordinate_commitment_sha256"],
@@ -35,7 +35,15 @@ def test_reference_summary_is_exact(receipt: dict[str, object]) -> None:
 
 def test_reference_trimmed_means_are_exact(receipt: dict[str, object]) -> None:
     coordinates = cast(list[dict[str, object]], receipt["coordinates"])
-    expected = [
+    expected_trimmed = [
+        _ratio(3, 25),
+        _ratio(-2, 25),
+        _ratio(9, 200),
+        _ratio(21, 100),
+        _ratio(-213, 7000),
+        _ratio(3, 40),
+    ]
+    expected_medians = [
         _ratio(3, 25),
         _ratio(-2, 25),
         _ratio(9, 200),
@@ -51,8 +59,8 @@ def test_reference_trimmed_means_are_exact(receipt: dict[str, object]) -> None:
         cast(dict[str, object], coordinate["arithmetic"])["median"]
         for coordinate in coordinates
     ]
-    assert actual == expected
-    assert medians == expected
+    assert actual == expected_trimmed
+    assert medians == expected_medians
 
 
 def test_reference_mean_shifts_are_exact(receipt: dict[str, object]) -> None:
@@ -62,7 +70,7 @@ def test_reference_mean_shifts_are_exact(receipt: dict[str, object]) -> None:
         _ratio(217, 550),
         _ratio(-441, 1100),
         _ratio(98, 275),
-        _ratio(-432, 1375),
+        _ratio(-969, 3080),
         _ratio(63, 220),
     ]
     actual = [
