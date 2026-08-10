@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from stat import S_IMODE
 from typing import cast
 
 import pytest
@@ -22,6 +23,7 @@ def test_complete_cli_workflow(
     aggregate_output = capsys.readouterr().out
     assert "aggregated 11 clients / 6 dimensions / trim 2 each side" in aggregate_output
     assert "included 42 cells; excluded 24 coordinate cells" in aggregate_output
+    assert S_IMODE(receipt_path.stat().st_mode) == 0o600
 
     assert main(["verify", str(receipt_path)]) == 0
     verify_output = capsys.readouterr().out
@@ -37,6 +39,7 @@ def test_complete_cli_workflow(
     report_output = capsys.readouterr().out
     assert "wrote verified report" in report_output
     assert report_path.read_text(encoding="utf-8").startswith("<!doctype html>")
+    assert S_IMODE(report_path.stat().st_mode) == 0o600
 
 
 @pytest.mark.parametrize("command", ["aggregate", "report"])

@@ -45,7 +45,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def _write_new(path: Path, content: str) -> None:
     try:
-        descriptor = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o644)
+        descriptor = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
         with os.fdopen(descriptor, "w", encoding="utf-8", newline="\n") as handle:
             handle.write(content)
     except FileExistsError as exc:
