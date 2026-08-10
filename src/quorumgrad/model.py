@@ -73,11 +73,7 @@ def _bounded_int(
     minimum: int,
     maximum: int,
 ) -> int:
-    if (
-        isinstance(value, bool)
-        or not isinstance(value, int)
-        or not minimum <= value <= maximum
-    ):
+    if isinstance(value, bool) or not isinstance(value, int) or not minimum <= value <= maximum:
         raise ContractError(f"{label} must be an integer in {minimum}..{maximum}")
     return value
 
@@ -94,26 +90,17 @@ def parse_round(document: object) -> AggregationRound:
     trim = _bounded_int(root["trim"], "trim", minimum=0, maximum=MAX_TRIM)
 
     raw_dimensions = root["dimensions"]
-    if (
-        not isinstance(raw_dimensions, list)
-        or not 1 <= len(raw_dimensions) <= MAX_DIMENSIONS
-    ):
+    if not isinstance(raw_dimensions, list) or not 1 <= len(raw_dimensions) <= MAX_DIMENSIONS:
         raise ContractError(f"dimensions must contain 1..{MAX_DIMENSIONS} entries")
     dimensions = tuple(
-        _name(value, f"dimensions[{index}]")
-        for index, value in enumerate(raw_dimensions)
+        _name(value, f"dimensions[{index}]") for index, value in enumerate(raw_dimensions)
     )
     if len(set(dimensions)) != len(dimensions):
         raise ContractError("dimension names must be unique")
 
     raw_clients = root["clients"]
-    if (
-        not isinstance(raw_clients, list)
-        or not MIN_CLIENTS <= len(raw_clients) <= MAX_CLIENTS
-    ):
-        raise ContractError(
-            f"clients must contain {MIN_CLIENTS}..{MAX_CLIENTS} entries"
-        )
+    if not isinstance(raw_clients, list) or not MIN_CLIENTS <= len(raw_clients) <= MAX_CLIENTS:
+        raise ContractError(f"clients must contain {MIN_CLIENTS}..{MAX_CLIENTS} entries")
     if 2 * trim >= len(raw_clients):
         raise ContractError("trim requires 2 * trim < client count")
 
@@ -124,8 +111,7 @@ def parse_round(document: object) -> AggregationRound:
         raw_update = client["update"]
         if not isinstance(raw_update, list) or len(raw_update) != len(dimensions):
             raise ContractError(
-                f"clients[{client_index}].update must contain "
-                f"{len(dimensions)} coordinates"
+                f"clients[{client_index}].update must contain {len(dimensions)} coordinates"
             )
         update = tuple(
             _bounded_int(

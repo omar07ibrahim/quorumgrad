@@ -62,11 +62,11 @@ def render_report(receipt: dict[str, object]) -> str:
 <td><code>{_escape(coordinate["coordinate_sha256"])}</code></td></tr>"""
         )
         low_items = "".join(
-            f'<li><code>{_escape(item["client_id"])}</code><b>{_escape(item["value_fixed"])}</b></li>'
+            f"<li><code>{_escape(item['client_id'])}</code><b>{_escape(item['value_fixed'])}</b></li>"
             for item in low
         )
         high_items = "".join(
-            f'<li><code>{_escape(item["client_id"])}</code><b>{_escape(item["value_fixed"])}</b></li>'
+            f"<li><code>{_escape(item['client_id'])}</code><b>{_escape(item['value_fixed'])}</b></li>"
             for item in high
         )
         included_ids = " / ".join(_escape(item["client_id"]) for item in included)
@@ -84,9 +84,7 @@ def render_report(receipt: dict[str, object]) -> str:
     for client in clients:
         update = cast(list[int], client["update"])
         values = "".join(f"<td>{_escape(value)}</td>" for value in update)
-        client_rows.append(
-            f'<tr><td><code>{_escape(client["client_id"])}</code></td>{values}</tr>'
-        )
+        client_rows.append(f"<tr><td><code>{_escape(client['client_id'])}</code></td>{values}</tr>")
 
     maximum_shift = cast(dict[str, int], summary["maximum_abs_mean_shift"])
     return f"""<!doctype html>

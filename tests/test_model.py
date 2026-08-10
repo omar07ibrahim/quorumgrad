@@ -157,8 +157,7 @@ def test_trim_requires_a_nonempty_center(count: int, trim: int) -> None:
     document = _valid()
     document["trim"] = trim
     document["clients"] = [
-        {"client_id": f"client-{index}", "update": [index, index]}
-        for index in range(count)
+        {"client_id": f"client-{index}", "update": [index, index]} for index in range(count)
     ]
     with pytest.raises(ContractError, match=r"2 \* trim"):
         parse_round(document)

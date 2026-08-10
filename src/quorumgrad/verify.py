@@ -29,8 +29,7 @@ def _ratio(numerator: int, denominator: int) -> dict[str, int]:
 
 def _difference(left: dict[str, int], right: dict[str, int]) -> dict[str, int]:
     return _ratio(
-        left["numerator"] * right["denominator"]
-        - right["numerator"] * left["denominator"],
+        left["numerator"] * right["denominator"] - right["numerator"] * left["denominator"],
         left["denominator"] * right["denominator"],
     )
 

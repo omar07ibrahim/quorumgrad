@@ -56,8 +56,7 @@ def test_reference_trimmed_means_are_exact(receipt: dict[str, object]) -> None:
         for coordinate in coordinates
     ]
     medians = [
-        cast(dict[str, object], coordinate["arithmetic"])["median"]
-        for coordinate in coordinates
+        cast(dict[str, object], coordinate["arithmetic"])["median"] for coordinate in coordinates
     ]
     assert actual == expected_trimmed
     assert medians == expected_medians

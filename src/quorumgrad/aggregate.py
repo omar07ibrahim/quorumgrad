@@ -20,10 +20,7 @@ def _ratio(numerator: int, denominator: int) -> dict[str, int]:
 
 
 def _subtract(left: dict[str, int], right: dict[str, int]) -> dict[str, int]:
-    numerator = (
-        left["numerator"] * right["denominator"]
-        - right["numerator"] * left["denominator"]
-    )
+    numerator = left["numerator"] * right["denominator"] - right["numerator"] * left["denominator"]
     denominator = left["denominator"] * right["denominator"]
     return _ratio(numerator, denominator)
 
