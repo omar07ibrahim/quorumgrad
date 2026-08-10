@@ -1,0 +1,1041 @@
+{
+  "coordinates": [
+    {
+      "arithmetic": {
+        "all_sum_fixed": 6080,
+        "included_sum_fixed": 840,
+        "mean": {
+          "denominator": 275,
+          "numerator": 152
+        },
+        "median": {
+          "denominator": 25,
+          "numerator": 3
+        },
+        "trimmed_mean": {
+          "denominator": 25,
+          "numerator": 3
+        },
+        "trimmed_minus_mean": {
+          "denominator": 275,
+          "numerator": -119
+        },
+        "trimmed_minus_median": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "coordinate_sha256": "4d9984ff6a1e138fc6eaadb3f815db3157b970adb85af1ba6167c0e9913c295e",
+      "dimension": "encoder.bias",
+      "high_excluded": [
+        {
+          "client_id": "worker-09",
+          "value_fixed": 124
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 9000
+        }
+      ],
+      "included": [
+        {
+          "client_id": "worker-06",
+          "value_fixed": 117
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 118
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 119
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 120
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 121
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 122
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 123
+        }
+      ],
+      "index": 0,
+      "low_excluded": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -4000
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 116
+        }
+      ],
+      "ranked": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -4000
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 116
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": 117
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 118
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 119
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 120
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 121
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 122
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 123
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": 124
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 9000
+        }
+      ]
+    },
+    {
+      "arithmetic": {
+        "all_sum_fixed": -5220,
+        "included_sum_fixed": -560,
+        "mean": {
+          "denominator": 550,
+          "numerator": -261
+        },
+        "median": {
+          "denominator": 25,
+          "numerator": -2
+        },
+        "trimmed_mean": {
+          "denominator": 25,
+          "numerator": -2
+        },
+        "trimmed_minus_mean": {
+          "denominator": 550,
+          "numerator": 217
+        },
+        "trimmed_minus_median": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "coordinate_sha256": "1b5569d5715f15dbf32355ff382bad485247d2ac65c7265ae29504f4d211cd73",
+      "dimension": "encoder.scale",
+      "high_excluded": [
+        {
+          "client_id": "worker-09",
+          "value_fixed": -76
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 4500
+        }
+      ],
+      "included": [
+        {
+          "client_id": "worker-06",
+          "value_fixed": -83
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": -82
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": -81
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": -80
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": -79
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": -78
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": -77
+        }
+      ],
+      "index": 1,
+      "low_excluded": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -9000
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": -84
+        }
+      ],
+      "ranked": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -9000
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": -84
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": -83
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": -82
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": -81
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": -80
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": -79
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": -78
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": -77
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": -76
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 4500
+        }
+      ]
+    },
+    {
+      "arithmetic": {
+        "all_sum_fixed": 4905,
+        "included_sum_fixed": 315,
+        "mean": {
+          "denominator": 2200,
+          "numerator": 981
+        },
+        "median": {
+          "denominator": 200,
+          "numerator": 9
+        },
+        "trimmed_mean": {
+          "denominator": 200,
+          "numerator": 9
+        },
+        "trimmed_minus_mean": {
+          "denominator": 1100,
+          "numerator": -441
+        },
+        "trimmed_minus_median": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "coordinate_sha256": "4c506afac7bb8066268638c66c3f1bebad614f03f70dd375fb301739a070bd1e",
+      "dimension": "head.bias",
+      "high_excluded": [
+        {
+          "client_id": "worker-09",
+          "value_fixed": 49
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 8000
+        }
+      ],
+      "included": [
+        {
+          "client_id": "worker-06",
+          "value_fixed": 42
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 43
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 44
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 45
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 46
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 47
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 48
+        }
+      ],
+      "index": 2,
+      "low_excluded": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -3500
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 41
+        }
+      ],
+      "ranked": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -3500
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 41
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": 42
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 43
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 44
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 45
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 46
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 47
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 48
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": 49
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 8000
+        }
+      ]
+    },
+    {
+      "arithmetic": {
+        "all_sum_fixed": -1610,
+        "included_sum_fixed": 1470,
+        "mean": {
+          "denominator": 1100,
+          "numerator": -161
+        },
+        "median": {
+          "denominator": 100,
+          "numerator": 21
+        },
+        "trimmed_mean": {
+          "denominator": 100,
+          "numerator": 21
+        },
+        "trimmed_minus_mean": {
+          "denominator": 275,
+          "numerator": 98
+        },
+        "trimmed_minus_median": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "coordinate_sha256": "db4b20c39cd2bacbc7b4d69f4d5c2ce99fe19074734c507f694628e18bec67d9",
+      "dimension": "head.weight",
+      "high_excluded": [
+        {
+          "client_id": "worker-09",
+          "value_fixed": 214
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 5000
+        }
+      ],
+      "included": [
+        {
+          "client_id": "worker-06",
+          "value_fixed": 207
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 208
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 209
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 210
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 211
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 212
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 213
+        }
+      ],
+      "index": 3,
+      "low_excluded": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -8500
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 206
+        }
+      ],
+      "ranked": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -8500
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 206
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": 207
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 208
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 209
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 210
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 211
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 212
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 213
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": 214
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 5000
+        }
+      ]
+    },
+    {
+      "arithmetic": {
+        "all_sum_fixed": 3126,
+        "included_sum_fixed": -213,
+        "mean": {
+          "denominator": 5500,
+          "numerator": 1563
+        },
+        "median": {
+          "denominator": 100,
+          "numerator": -3
+        },
+        "trimmed_mean": {
+          "denominator": 7000,
+          "numerator": -213
+        },
+        "trimmed_minus_mean": {
+          "denominator": 3080,
+          "numerator": -969
+        },
+        "trimmed_minus_median": {
+          "denominator": 7000,
+          "numerator": -3
+        }
+      },
+      "coordinate_sha256": "0fa9455af2571446d82292a5ef768f67d342fa311c4f90f292b73a926f6cc229",
+      "dimension": "router.balance",
+      "high_excluded": [
+        {
+          "client_id": "worker-08",
+          "value_fixed": -27
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 7600
+        }
+      ],
+      "included": [
+        {
+          "client_id": "worker-07",
+          "value_fixed": -33
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": -32
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": -31
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": -30
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": -30
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": -29
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": -28
+        }
+      ],
+      "index": 4,
+      "low_excluded": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -4200
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": -34
+        }
+      ],
+      "ranked": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -4200
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": -34
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": -33
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": -32
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": -31
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": -30
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": -30
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": -29
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": -28
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": -27
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 7600
+        }
+      ]
+    },
+    {
+      "arithmetic": {
+        "all_sum_fixed": -2325,
+        "included_sum_fixed": 525,
+        "mean": {
+          "denominator": 440,
+          "numerator": -93
+        },
+        "median": {
+          "denominator": 40,
+          "numerator": 3
+        },
+        "trimmed_mean": {
+          "denominator": 40,
+          "numerator": 3
+        },
+        "trimmed_minus_mean": {
+          "denominator": 220,
+          "numerator": 63
+        },
+        "trimmed_minus_median": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "coordinate_sha256": "6d3429dfcb0da7c42171b1d57917269bfd2b13fe70f5f09241077b6f3413e811",
+      "dimension": "step.norm",
+      "high_excluded": [
+        {
+          "client_id": "worker-08",
+          "value_fixed": 79
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 4800
+        }
+      ],
+      "included": [
+        {
+          "client_id": "worker-07",
+          "value_fixed": 72
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 73
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 74
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 75
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 76
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 77
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": 78
+        }
+      ],
+      "index": 5,
+      "low_excluded": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -7800
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": 71
+        }
+      ],
+      "ranked": [
+        {
+          "client_id": "attack-negative",
+          "value_fixed": -7800
+        },
+        {
+          "client_id": "worker-09",
+          "value_fixed": 71
+        },
+        {
+          "client_id": "worker-07",
+          "value_fixed": 72
+        },
+        {
+          "client_id": "worker-05",
+          "value_fixed": 73
+        },
+        {
+          "client_id": "worker-03",
+          "value_fixed": 74
+        },
+        {
+          "client_id": "worker-01",
+          "value_fixed": 75
+        },
+        {
+          "client_id": "worker-04",
+          "value_fixed": 76
+        },
+        {
+          "client_id": "worker-02",
+          "value_fixed": 77
+        },
+        {
+          "client_id": "worker-06",
+          "value_fixed": 78
+        },
+        {
+          "client_id": "worker-08",
+          "value_fixed": 79
+        },
+        {
+          "client_id": "attack-positive",
+          "value_fixed": 4800
+        }
+      ]
+    }
+  ],
+  "format": "quorumgrad.receipt.v1",
+  "ledger": [
+    {
+      "entry_sha256": "9d72c38a324fcfcd792c2e2b4b22f09ba7949b4424ed6e8fe7b246a4e9ebfed9",
+      "index": 0,
+      "kind": "round",
+      "payload_sha256": "11ae6ba355ba5fcb72327e33587e3f59bb993e68559da69590be7e89476195fd",
+      "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "entry_sha256": "56d6e0f1d5dece12f51613036d58812dad71c1cf216fc16243bd1720369fc057",
+      "index": 1,
+      "kind": "client",
+      "payload_sha256": "1e035c2cd00896288960049161285c0d09fb5f3439803afe67062077f32290c5",
+      "previous_sha256": "9d72c38a324fcfcd792c2e2b4b22f09ba7949b4424ed6e8fe7b246a4e9ebfed9"
+    },
+    {
+      "entry_sha256": "5b09f8b8b64f2309b7c6986c5ec9426420e7494a147d00c52bb50741530bc366",
+      "index": 2,
+      "kind": "client",
+      "payload_sha256": "814807ff2551371f07ba4a74179192a6e4034b06d1df4900edc12e243808f9d5",
+      "previous_sha256": "56d6e0f1d5dece12f51613036d58812dad71c1cf216fc16243bd1720369fc057"
+    },
+    {
+      "entry_sha256": "478a98a4fe8ca694c2aae23c6a3e5fa33869051e54178587cb7ed8bea6644c07",
+      "index": 3,
+      "kind": "client",
+      "payload_sha256": "a7f0d875fad06206e589bbfac02bb6b5698e7112412e86c6cc06f3f7a5c89904",
+      "previous_sha256": "5b09f8b8b64f2309b7c6986c5ec9426420e7494a147d00c52bb50741530bc366"
+    },
+    {
+      "entry_sha256": "cbfeae1bb299e0f7a9b5f2cca283397cd439029042be49f7428d726d1ab7b2c1",
+      "index": 4,
+      "kind": "client",
+      "payload_sha256": "835b68dd4014d79be556d205d85d71c1bfdaccc923c6a825d7c232dc05d26b44",
+      "previous_sha256": "478a98a4fe8ca694c2aae23c6a3e5fa33869051e54178587cb7ed8bea6644c07"
+    },
+    {
+      "entry_sha256": "1832cfd65a93ba44cd0462851b831045741de7e6e8b0d3929ed03ef0f358b0ea",
+      "index": 5,
+      "kind": "client",
+      "payload_sha256": "9fdd346a24ea5c7178243f37ecaaf056def98321b723591013612c9cca0a688c",
+      "previous_sha256": "cbfeae1bb299e0f7a9b5f2cca283397cd439029042be49f7428d726d1ab7b2c1"
+    },
+    {
+      "entry_sha256": "a49eb415a0a3e00d40898de876b55c2841ce9a295d4253ab0a399f814619254b",
+      "index": 6,
+      "kind": "client",
+      "payload_sha256": "3d1c3cb7a870d767769fc5d40c60584e529a16271d5cd82a9f45b9afd99b0cae",
+      "previous_sha256": "1832cfd65a93ba44cd0462851b831045741de7e6e8b0d3929ed03ef0f358b0ea"
+    },
+    {
+      "entry_sha256": "b654cd48e8b0ad238be7cd89d194bede14fa7e1ab9af784a1a97d807d56598df",
+      "index": 7,
+      "kind": "client",
+      "payload_sha256": "275a9f2bc8650758825184ebed25fe39d60c31242efaa60599e86a9a434b2ee9",
+      "previous_sha256": "a49eb415a0a3e00d40898de876b55c2841ce9a295d4253ab0a399f814619254b"
+    },
+    {
+      "entry_sha256": "77ce851c7d51c6fb2435906fe4f326c2fa9761ba082257ae04b460a0e38316dc",
+      "index": 8,
+      "kind": "client",
+      "payload_sha256": "76522ec3689981a222bbde22e381597555fb93808f1d9bdc64f6d17c9ca5bbea",
+      "previous_sha256": "b654cd48e8b0ad238be7cd89d194bede14fa7e1ab9af784a1a97d807d56598df"
+    },
+    {
+      "entry_sha256": "d1ac2a49996b9202724ae4eef4da310af8ce39296714b4d387d68734257c2551",
+      "index": 9,
+      "kind": "client",
+      "payload_sha256": "e1c16e10e7fa75326cfa280e581c25622d3dfa19e92d767c6803821afd35f30b",
+      "previous_sha256": "77ce851c7d51c6fb2435906fe4f326c2fa9761ba082257ae04b460a0e38316dc"
+    },
+    {
+      "entry_sha256": "f5980696d1f0db6430060cfe5d4e3773ef8919ebafa0e5f310dfba66bc763538",
+      "index": 10,
+      "kind": "client",
+      "payload_sha256": "86a8c2411637deca8c751195bb456aefa106999b864b982431e8aec14f59f1e3",
+      "previous_sha256": "d1ac2a49996b9202724ae4eef4da310af8ce39296714b4d387d68734257c2551"
+    },
+    {
+      "entry_sha256": "be4c5b57f9a5099fdb058e6e56b565c0a5a3e2d0a1367e53af76ffcaf46f4be2",
+      "index": 11,
+      "kind": "client",
+      "payload_sha256": "735637ed3226b87cb952f77e63b34849e6b73767a253b29e01fc54c7326edc2f",
+      "previous_sha256": "f5980696d1f0db6430060cfe5d4e3773ef8919ebafa0e5f310dfba66bc763538"
+    },
+    {
+      "entry_sha256": "cb952e7f7052e0217704d742e00e3882852fbcb22788d1187d1dd93fcfeb837c",
+      "index": 12,
+      "kind": "coordinate",
+      "payload_sha256": "0c3301825fbd835c02e7bcbb2eabd216fa3ed54db0de00ffae2b2edab9323e4d",
+      "previous_sha256": "be4c5b57f9a5099fdb058e6e56b565c0a5a3e2d0a1367e53af76ffcaf46f4be2"
+    },
+    {
+      "entry_sha256": "919032b81109f116754328e74cfd02c473eacc7823ee25a6f347f2c5d6f61c11",
+      "index": 13,
+      "kind": "coordinate",
+      "payload_sha256": "27c1a8482bd4b747ccf9befbe57f93d66355570fe6930b3a1f8a2662a96357d0",
+      "previous_sha256": "cb952e7f7052e0217704d742e00e3882852fbcb22788d1187d1dd93fcfeb837c"
+    },
+    {
+      "entry_sha256": "a1b6a919b6358116bde856a333d9db182a9facab8d5e0d0973cb5d54c28d43c3",
+      "index": 14,
+      "kind": "coordinate",
+      "payload_sha256": "9652b8bd24e144f3c048a954549d5aa47e2759c394b2439564532de05204f9b9",
+      "previous_sha256": "919032b81109f116754328e74cfd02c473eacc7823ee25a6f347f2c5d6f61c11"
+    },
+    {
+      "entry_sha256": "ceac0b7e326009e2fcd7a3395c6a5bddf57277051e3e3583f1a5cc06f88a0d6a",
+      "index": 15,
+      "kind": "coordinate",
+      "payload_sha256": "dad613cfc9ff4dae58c57523f8efe0a4847b838856705903aed334cbf9398e1c",
+      "previous_sha256": "a1b6a919b6358116bde856a333d9db182a9facab8d5e0d0973cb5d54c28d43c3"
+    },
+    {
+      "entry_sha256": "e53e000ec7a3787c066451120101efd9b7de8fdce984bfc83774308b6a281992",
+      "index": 16,
+      "kind": "coordinate",
+      "payload_sha256": "670cb0b414f7b4a818f8ed7dfdafe010665bd1980942b0954f154de99d59745a",
+      "previous_sha256": "ceac0b7e326009e2fcd7a3395c6a5bddf57277051e3e3583f1a5cc06f88a0d6a"
+    },
+    {
+      "entry_sha256": "253445318fbca758b0844607f38a5a6a352a3d034e6b062c8e89d78bf2f3a14d",
+      "index": 17,
+      "kind": "coordinate",
+      "payload_sha256": "6352acac59d0af0e3ce188ee46fb30cdb01bc794f45293dc01d3591b71780873",
+      "previous_sha256": "e53e000ec7a3787c066451120101efd9b7de8fdce984bfc83774308b6a281992"
+    }
+  ],
+  "ledger_root_sha256": "253445318fbca758b0844607f38a5a6a352a3d034e6b062c8e89d78bf2f3a14d",
+  "receipt_sha256": "245a270d423e8b20e9bdf24125fe67a0546772850d54303ad97f32d267170ddf",
+  "round": {
+    "clients": [
+      {
+        "client_id": "attack-negative",
+        "update": [
+          -4000,
+          -9000,
+          -3500,
+          -8500,
+          -4200,
+          -7800
+        ]
+      },
+      {
+        "client_id": "attack-positive",
+        "update": [
+          9000,
+          4500,
+          8000,
+          5000,
+          7600,
+          4800
+        ]
+      },
+      {
+        "client_id": "worker-01",
+        "update": [
+          120,
+          -80,
+          45,
+          210,
+          -30,
+          75
+        ]
+      },
+      {
+        "client_id": "worker-02",
+        "update": [
+          118,
+          -82,
+          44,
+          208,
+          -29,
+          77
+        ]
+      },
+      {
+        "client_id": "worker-03",
+        "update": [
+          121,
+          -79,
+          46,
+          211,
+          -31,
+          74
+        ]
+      },
+      {
+        "client_id": "worker-04",
+        "update": [
+          119,
+          -81,
+          43,
+          209,
+          -30,
+          76
+        ]
+      },
+      {
+        "client_id": "worker-05",
+        "update": [
+          122,
+          -78,
+          47,
+          212,
+          -32,
+          73
+        ]
+      },
+      {
+        "client_id": "worker-06",
+        "update": [
+          117,
+          -83,
+          42,
+          207,
+          -28,
+          78
+        ]
+      },
+      {
+        "client_id": "worker-07",
+        "update": [
+          123,
+          -77,
+          48,
+          213,
+          -33,
+          72
+        ]
+      },
+      {
+        "client_id": "worker-08",
+        "update": [
+          116,
+          -84,
+          41,
+          206,
+          -27,
+          79
+        ]
+      },
+      {
+        "client_id": "worker-09",
+        "update": [
+          124,
+          -76,
+          49,
+          214,
+          -34,
+          71
+        ]
+      }
+    ],
+    "dimensions": [
+      "encoder.bias",
+      "encoder.scale",
+      "head.bias",
+      "head.weight",
+      "router.balance",
+      "step.norm"
+    ],
+    "format": "quorumgrad.round.v1",
+    "round_id": "sign-flip-incident",
+    "scale": 1000,
+    "trim": 2
+  },
+  "round_sha256": "174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982",
+  "summary": {
+    "client_update_cells": 66,
+    "clients": 11,
+    "coordinate_commitment_sha256": "de93deb1e874406cbd897ad8671c2c6cf401d1cb9afd5c2751a55e54552d779a",
+    "dimensions": 6,
+    "distinct_excluded_clients": 4,
+    "excluded_cells": 24,
+    "included_cells": 42,
+    "included_per_coordinate": 7,
+    "maximum_abs_mean_shift": {
+      "denominator": 275,
+      "numerator": 119
+    },
+    "maximum_shift_dimension": "encoder.bias",
+    "nonzero_mean_shift_coordinates": 6,
+    "nonzero_median_gap_coordinates": 1,
+    "trim_each_side": 2
+  }
+}

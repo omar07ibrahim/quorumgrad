@@ -1,0 +1,232 @@
+{
+  "files": [
+    {
+      "bytes": 3183,
+      "media_type": "image/svg+xml",
+      "path": "docs/evidence/architecture.svg",
+      "sha256": "7d2296eb0e581cdf783569bac646013efff6a11f8b14a66b4217dfe6be71919e"
+    },
+    {
+      "bytes": 14152,
+      "media_type": "image/svg+xml",
+      "path": "docs/evidence/exclusion-map.svg",
+      "sha256": "c06367fb84fa6f4cd4ae403305019ed6f80bd8b06cd6cc901f8fd0f1bc0e0501"
+    },
+    {
+      "bytes": 103159,
+      "dimensions": [
+        1180,
+        650
+      ],
+      "media_type": "image/png",
+      "path": "docs/evidence/quorumgrad-cli.png",
+      "sha256": "56896978732dd898ba7a7aa242b199da755b1c4cf3fe67e00284fd34ecd8e855"
+    },
+    {
+      "bytes": 1898,
+      "media_type": "text/plain",
+      "path": "docs/evidence/quorumgrad-cli.txt",
+      "sha256": "1315c41a7c0c662b5fb623c270b8c71d24f0fe1afeeab7e00ee15d1afc256fad"
+    },
+    {
+      "bytes": 304974,
+      "dimensions": [
+        1120,
+        820
+      ],
+      "frames": 3,
+      "media_type": "image/gif",
+      "path": "docs/evidence/quorumgrad-demo.gif",
+      "sha256": "671021f399b2cbc4fd81e33e4d03d211b21534cbdef0dc78a9118c453a3ce066"
+    },
+    {
+      "bytes": 25579,
+      "media_type": "application/json",
+      "path": "docs/evidence/quorumgrad-receipt.json",
+      "sha256": "28fa164a49ec9bab2603a012896a35c5ae0cdc7368a600a5fa3f7d46aa955450"
+    },
+    {
+      "bytes": 756265,
+      "dimensions": [
+        1440,
+        3400
+      ],
+      "media_type": "image/png",
+      "path": "docs/evidence/quorumgrad-report-full.png",
+      "sha256": "7cb4e05c2030df3240cd92b12071dfc1f4a63eff0e358c3ba77422b71e06453a"
+    },
+    {
+      "bytes": 176101,
+      "dimensions": [
+        390,
+        844
+      ],
+      "media_type": "image/png",
+      "path": "docs/evidence/quorumgrad-report-mobile.png",
+      "sha256": "fc225772cf9eb018027625264353c08d13db6a1ca17bc31bcfbee14301b3ff8b"
+    },
+    {
+      "bytes": 14256,
+      "media_type": "text/html",
+      "path": "docs/evidence/quorumgrad-report.html",
+      "sha256": "ec113a5b8670c3fc8ee6c9862f78f4b3295045f4b7aafcb74a17b9e376bafe2e"
+    },
+    {
+      "bytes": 424528,
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "media_type": "image/png",
+      "path": "docs/evidence/quorumgrad-report.png",
+      "sha256": "c0ec898f95aa348394e825b14edea1037b4cb7faac464617d014caa6c8203f65"
+    },
+    {
+      "bytes": 7582,
+      "media_type": "image/svg+xml",
+      "path": "docs/evidence/rank-witness.svg",
+      "sha256": "786fd936035b78f94af54a2b1d0292dc3464816ae79cdd67ce1ac64734960f33"
+    },
+    {
+      "bytes": 3225,
+      "media_type": "image/svg+xml",
+      "path": "docs/evidence/shift-comparison.svg",
+      "sha256": "aa21d00a8f3293da3f2f0fa4eaef6c0cdd51afbefd2fa7b4ac34e7d490f4c5e5"
+    }
+  ],
+  "format": "quorumgrad.evidence.v1",
+  "generation": {
+    "browser": "Chromium 151.0.7922.34",
+    "container_image": "mcr.microsoft.com/playwright/python@sha256:51d31fdfacb0cff99a1a724152e34ae408d2bd4e7da310ff157450f49261cc59",
+    "filesystem": "read-only source mount",
+    "network": "disabled during browser capture",
+    "pillow": "12.3.0",
+    "playwright": "1.62.0",
+    "python": "3.14.6"
+  },
+  "ledger_root_sha256": "253445318fbca758b0844607f38a5a6a352a3d034e6b062c8e89d78bf2f3a14d",
+  "receipt_sha256": "245a270d423e8b20e9bdf24125fe67a0546772850d54303ad97f32d267170ddf",
+  "result": {
+    "client_update_cells": 66,
+    "clients": 11,
+    "coordinate_commitment_sha256": "de93deb1e874406cbd897ad8671c2c6cf401d1cb9afd5c2751a55e54552d779a",
+    "dimensions": 6,
+    "distinct_excluded_clients": 4,
+    "excluded_cells": 24,
+    "included_cells": 42,
+    "included_per_coordinate": 7,
+    "maximum_abs_mean_shift": {
+      "denominator": 275,
+      "numerator": 119
+    },
+    "maximum_shift_dimension": "encoder.bias",
+    "nonzero_mean_shift_coordinates": 6,
+    "nonzero_median_gap_coordinates": 1,
+    "trim_each_side": 2
+  },
+  "round_sha256": "174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982",
+  "source_revision": "8bb8a1e193afe6a959bdd2b0a7cb959981181adc",
+  "source_tree": "4ea93c5b618e81a12a93e98106d966ad2c506bfe",
+  "sources": [
+    {
+      "bytes": 7994,
+      "path": ".github/workflows/evidence.yml",
+      "sha256": "0bff26e2b4d2097dffee5ebc98661039af889a834d9aa540a79e4245e35e65f9"
+    },
+    {
+      "bytes": 1847,
+      "path": "pyproject.toml",
+      "sha256": "5700d7b34cf1a3fa05e1e4d13a397fcd378921e8cd0079ebde283e63c46798df"
+    },
+    {
+      "bytes": 394,
+      "path": "requirements/evidence-browser-image.lock.json",
+      "sha256": "1ba302dec7680863dcc3340ea8a129413c738c66b7f8bb0a4d95421bcf9e4c0f"
+    },
+    {
+      "bytes": 7250,
+      "path": "requirements/evidence-browser.txt",
+      "sha256": "6aa5ee3942f6dc461d35c87a3853c29a5c2a3f86bdb9fe5688bc042fe6cfc782"
+    },
+    {
+      "bytes": 139,
+      "path": "requirements/quality.in",
+      "sha256": "4fda60e9a15befda21c360eba93716d227e2269f7c03d0f5de57bc1e0925c6fc"
+    },
+    {
+      "bytes": 35224,
+      "path": "requirements/quality.txt",
+      "sha256": "2bb97d6fb7dcd5c0d58fb312883c4708b5016f194a66eac572d9b7acacaa79fa"
+    },
+    {
+      "bytes": 1901,
+      "path": "scenarios/sign-flip-round.json",
+      "sha256": "31856330ca8d4643c7aa86c3766ec1a4b879e664f280ee205fb793c9d724fc3c"
+    },
+    {
+      "bytes": 30430,
+      "path": "tools/capture_evidence.py",
+      "sha256": "a5531ebc40365a75d09ed8730042c910693502f623084b622e60183b566fb985"
+    },
+    {
+      "bytes": 370,
+      "path": "src/quorumgrad/__init__.py",
+      "sha256": "b100b29bebebb26955db2dad56253d474b58e5affa14a9dd52e7c211fd8d527b"
+    },
+    {
+      "bytes": 103,
+      "path": "src/quorumgrad/__main__.py",
+      "sha256": "01e2f9be0d350e31debd124b1554e6ccaaa4bb4f6fd601de41552d1f1058b48b"
+    },
+    {
+      "bytes": 5113,
+      "path": "src/quorumgrad/aggregate.py",
+      "sha256": "38c3219f3839218d6109e64140cb8ff6621e3064f31970f9e40a15a7cd1e3a11"
+    },
+    {
+      "bytes": 2813,
+      "path": "src/quorumgrad/canonical.py",
+      "sha256": "fe0985fba51f0ab2daff3bab3f692e01a47dace01d25ff6d04c5b02820f64031"
+    },
+    {
+      "bytes": 5467,
+      "path": "src/quorumgrad/cli.py",
+      "sha256": "696a24bb13135d7c48bd54e00edb8033f210b31eaf42661ff20e4360b2449668"
+    },
+    {
+      "bytes": 950,
+      "path": "src/quorumgrad/engine.py",
+      "sha256": "79b7c59243b964aab5e779dceaa5d86cfd8c29560205e77f36c9ab4c9ac8119e"
+    },
+    {
+      "bytes": 388,
+      "path": "src/quorumgrad/errors.py",
+      "sha256": "fc6d0154752433e014b209be79ae26895358367ccf523d76fce264d36a41af56"
+    },
+    {
+      "bytes": 1343,
+      "path": "src/quorumgrad/ledger.py",
+      "sha256": "59dcc356e97257a6307b1f60c1ef23f5920cc3def4a96ee6732acadabd321e76"
+    },
+    {
+      "bytes": 5002,
+      "path": "src/quorumgrad/model.py",
+      "sha256": "abb17e5391f6cfc374c3f94fd6bcb81da18c1d320e5028230e8f4775e1b0c779"
+    },
+    {
+      "bytes": 11131,
+      "path": "src/quorumgrad/report.py",
+      "sha256": "c9e37d4a42375f88380f1583347805ef992a1a62f11a59fda20f5554527fea17"
+    },
+    {
+      "bytes": 8508,
+      "path": "src/quorumgrad/verify.py",
+      "sha256": "b38608b73c75fb72dada2f5bb2d4a41b7ed5e369b2a107c8267d6581d5438401"
+    },
+    {
+      "bytes": 0,
+      "path": "src/quorumgrad/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

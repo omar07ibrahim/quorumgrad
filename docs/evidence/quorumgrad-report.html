@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuorumGrad · sign-flip-incident</title>
+<style>
+:root{--ink:#172337;--muted:#64748b;--paper:#f5f7fb;--card:#fff;--night:#111827;
+--blue:#4f6bed;--cyan:#20b8b0;--red:#ef5f73;--amber:#e8a23a;--green:#15806b;--line:#dfe5ef}
+*{box-sizing:border-box}html{background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
+body{margin:0}header{background:radial-gradient(circle at 84% 0,#244a7e 0,transparent 40%),linear-gradient(145deg,#0b1323,#18213d);color:#fff;padding:54px max(5vw,28px) 54px}
+.eyebrow{color:#6ee7df;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(40px,6vw,74px);line-height:1;margin:14px 0 18px;letter-spacing:-.05em}
+.lead{max-width:870px;color:#d0d9ea;font-size:18px}.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.badge{border:1px solid #ffffff30;border-radius:99px;padding:7px 12px;background:#ffffff0d;color:#e5edf9;font-size:12px}
+main{max-width:1240px;margin:auto;padding:32px 28px 72px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-72px}
+.metric{background:var(--card);border:1px solid var(--line);box-shadow:0 18px 44px #233d5a12;border-radius:18px;padding:22px}
+.metric span,.metric small{display:block;color:var(--muted)}.metric strong{display:block;font-size:36px;line-height:1.1;margin:8px 0;color:var(--night)}
+section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;margin-top:22px;overflow:hidden}
+h2{font-size:24px;margin:0 0 6px;letter-spacing:-.02em}.sub{color:var(--muted);margin:0 0 22px}
+.boundary{display:grid;grid-template-columns:1fr 1fr;gap:18px}.boundary section{margin:0}.callout{background:#111a2e;color:#eef4ff}
+.callout .sub{color:#bdc9dc}.callout strong{font-size:32px}.callout code{color:#75e5dd}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;min-width:1050px}
+th,td{padding:11px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:#f8f9fc}
+tr:last-child td{border-bottom:0}code{font:12px ui-monospace,SFMono-Regular,Consolas,monospace}td code{overflow-wrap:anywhere}td small{display:block;color:var(--muted)}
+.witnesses{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.witness{border:1px solid var(--line);border-radius:17px;padding:18px;background:#fbfcff}
+.witness-title{display:flex;align-items:center;gap:11px}.witness-title span{display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:#e8ecff;color:#4058ce;font-weight:800}
+.witness h3{margin:0;font-size:17px}.rank-grid{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:10px;margin-top:14px}
+.rank-grid>div{border-radius:12px;padding:12px;background:#fff3f5}.rank-grid>div:last-child{background:#fff8eb}.rank-grid .center{background:#ebf8f5}
+.rank-grid h4{margin:0 0 8px;font-size:11px;text-transform:uppercase;color:var(--muted)}ul{list-style:none;padding:0;margin:0}li{display:flex;justify-content:space-between;gap:8px;margin:5px 0}
+.rank-grid p{font-size:11px;color:#526176;overflow-wrap:anywhere}.rank-grid strong{font-size:12px}.rank-grid strong small{display:block;color:var(--muted)}
+.digest{display:grid;grid-template-columns:205px 1fr;gap:10px 18px}.digest code{overflow-wrap:anywhere;color:#354b69}
+footer{color:var(--muted);font-size:12px;margin-top:24px;padding:0 6px}
+@media(max-width:900px){header{padding-bottom:90px}.metrics{grid-template-columns:repeat(2,1fr)}.boundary,.witnesses{grid-template-columns:1fr}}
+@media(max-width:520px){main{padding:20px 14px 50px}header{padding:38px 18px 84px}.metrics{gap:9px}.metric{padding:15px}.metric strong{font-size:28px}section{padding:18px}.rank-grid{grid-template-columns:1fr}.digest{grid-template-columns:1fr;gap:3px}}
+</style></head><body>
+<header><div class="eyebrow">QuorumGrad / independently replayed aggregation receipt</div>
+<h1>Robust aggregation,<br>with receipts.</h1>
+<p class="lead">Every fixed-point coordinate exposes its total order, low and high exclusions,
+included cohort, exact rational arithmetic, and content digest. A separate pairwise-rank verifier
+rebuilds the result without importing the sorting analyzer.</p>
+<div class="badges"><span class="badge">synthetic fixture</span>
+<span class="badge">integer-only input</span><span class="badge">exact rational output</span>
+<span class="badge">pairwise replay passed</span></div></header>
+<main><div class="metrics"><article class="metric"><span>Clients</span>
+<strong>11</strong><small>submitted updates</small></article><article class="metric"><span>Dimensions</span>
+<strong>6</strong><small>fixed-point coordinates</small></article><article class="metric"><span>Included</span>
+<strong>42</strong><small>coordinate cells</small></article><article class="metric"><span>Excluded</span>
+<strong>24</strong><small>rank witnesses</small></article></div>
+<div class="boundary"><section><h2>Reference-round result</h2>
+<p class="sub">The largest absolute mean-to-trimmed shift occurs at
+<code>encoder.bias</code>.</p>
+<p><strong>119/275 <small>approx 0.432727</small></strong></p>
+<p>4 distinct client IDs appear in at least one exclusion witness.</p></section>
+<section class="callout"><h2>Evidence boundary</h2><p class="sub">This report proves deterministic aggregation and replay for one declared round.
+It does not identify attackers, guarantee convergence, preserve privacy, certify a federated system,
+or establish universal poisoning resistance.</p><strong>2</strong>
+<p>declared exclusions per side and coordinate</p></section></div>
+<section><h2>Exact aggregation comparison</h2><p class="sub">Fractions are authoritative; decimals are display-only approximations.</p>
+<div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Mean</th><th>Trimmed mean</th><th>Median</th><th>Trim - mean</th><th>Coordinate digest</th></tr></thead>
+<tbody><tr><td><code>encoder.bias</code></td>
+<td>152/275 <small>approx 0.552727</small></td>
+<td>3/25 <small>approx 0.12</small></td>
+<td>3/25 <small>approx 0.12</small></td>
+<td>-119/275 <small>approx -0.432727</small></td>
+<td><code>4d9984ff6a1e138fc6eaadb3f815db3157b970adb85af1ba6167c0e9913c295e</code></td></tr><tr><td><code>encoder.scale</code></td>
+<td>-261/550 <small>approx -0.474545</small></td>
+<td>-2/25 <small>approx -0.08</small></td>
+<td>-2/25 <small>approx -0.08</small></td>
+<td>217/550 <small>approx 0.394545</small></td>
+<td><code>1b5569d5715f15dbf32355ff382bad485247d2ac65c7265ae29504f4d211cd73</code></td></tr><tr><td><code>head.bias</code></td>
+<td>981/2200 <small>approx 0.445909</small></td>
+<td>9/200 <small>approx 0.045</small></td>
+<td>9/200 <small>approx 0.045</small></td>
+<td>-441/1100 <small>approx -0.400909</small></td>
+<td><code>4c506afac7bb8066268638c66c3f1bebad614f03f70dd375fb301739a070bd1e</code></td></tr><tr><td><code>head.weight</code></td>
+<td>-161/1100 <small>approx -0.146364</small></td>
+<td>21/100 <small>approx 0.21</small></td>
+<td>21/100 <small>approx 0.21</small></td>
+<td>98/275 <small>approx 0.356364</small></td>
+<td><code>db4b20c39cd2bacbc7b4d69f4d5c2ce99fe19074734c507f694628e18bec67d9</code></td></tr><tr><td><code>router.balance</code></td>
+<td>1563/5500 <small>approx 0.284182</small></td>
+<td>-213/7000 <small>approx -0.030429</small></td>
+<td>-3/100 <small>approx -0.03</small></td>
+<td>-969/3080 <small>approx -0.31461</small></td>
+<td><code>0fa9455af2571446d82292a5ef768f67d342fa311c4f90f292b73a926f6cc229</code></td></tr><tr><td><code>step.norm</code></td>
+<td>-93/440 <small>approx -0.211364</small></td>
+<td>3/40 <small>approx 0.075</small></td>
+<td>3/40 <small>approx 0.075</small></td>
+<td>63/220 <small>approx 0.286364</small></td>
+<td><code>6d3429dfcb0da7c42171b1d57917269bfd2b13fe70f5f09241077b6f3413e811</code></td></tr></tbody></table></div></section>
+<section id="witnesses"><h2>Coordinate rank witnesses</h2><p class="sub">Ties are ordered by client ID for reproducible membership; equal values do not change the aggregate.</p>
+<div class="witnesses"><article class="witness"><div class="witness-title"><span>0</span>
+<h3>encoder.bias</h3></div>
+<div class="rank-grid"><div><h4>Low excluded</h4><ul><li><code>attack-negative</code><b>-4000</b></li><li><code>worker-08</code><b>116</b></li></ul></div>
+<div class="center"><h4>Included (7)</h4><p>worker-06 / worker-02 / worker-04 / worker-01 / worker-03 / worker-05 / worker-07</p>
+<strong>trimmed 3/25 <small>approx 0.12</small></strong></div>
+<div><h4>High excluded</h4><ul><li><code>worker-09</code><b>124</b></li><li><code>attack-positive</code><b>9000</b></li></ul></div></div></article><article class="witness"><div class="witness-title"><span>1</span>
+<h3>encoder.scale</h3></div>
+<div class="rank-grid"><div><h4>Low excluded</h4><ul><li><code>attack-negative</code><b>-9000</b></li><li><code>worker-08</code><b>-84</b></li></ul></div>
+<div class="center"><h4>Included (7)</h4><p>worker-06 / worker-02 / worker-04 / worker-01 / worker-03 / worker-05 / worker-07</p>
+<strong>trimmed -2/25 <small>approx -0.08</small></strong></div>
+<div><h4>High excluded</h4><ul><li><code>worker-09</code><b>-76</b></li><li><code>attack-positive</code><b>4500</b></li></ul></div></div></article><article class="witness"><div class="witness-title"><span>2</span>
+<h3>head.bias</h3></div>
+<div class="rank-grid"><div><h4>Low excluded</h4><ul><li><code>attack-negative</code><b>-3500</b></li><li><code>worker-08</code><b>41</b></li></ul></div>
+<div class="center"><h4>Included (7)</h4><p>worker-06 / worker-04 / worker-02 / worker-01 / worker-03 / worker-05 / worker-07</p>
+<strong>trimmed 9/200 <small>approx 0.045</small></strong></div>
+<div><h4>High excluded</h4><ul><li><code>worker-09</code><b>49</b></li><li><code>attack-positive</code><b>8000</b></li></ul></div></div></article><article class="witness"><div class="witness-title"><span>3</span>
+<h3>head.weight</h3></div>
+<div class="rank-grid"><div><h4>Low excluded</h4><ul><li><code>attack-negative</code><b>-8500</b></li><li><code>worker-08</code><b>206</b></li></ul></div>
+<div class="center"><h4>Included (7)</h4><p>worker-06 / worker-02 / worker-04 / worker-01 / worker-03 / worker-05 / worker-07</p>
+<strong>trimmed 21/100 <small>approx 0.21</small></strong></div>
+<div><h4>High excluded</h4><ul><li><code>worker-09</code><b>214</b></li><li><code>attack-positive</code><b>5000</b></li></ul></div></div></article><article class="witness"><div class="witness-title"><span>4</span>
+<h3>router.balance</h3></div>
+<div class="rank-grid"><div><h4>Low excluded</h4><ul><li><code>attack-negative</code><b>-4200</b></li><li><code>worker-09</code><b>-34</b></li></ul></div>
+<div class="center"><h4>Included (7)</h4><p>worker-07 / worker-05 / worker-03 / worker-01 / worker-04 / worker-02 / worker-06</p>
+<strong>trimmed -213/7000 <small>approx -0.030429</small></strong></div>
+<div><h4>High excluded</h4><ul><li><code>worker-08</code><b>-27</b></li><li><code>attack-positive</code><b>7600</b></li></ul></div></div></article><article class="witness"><div class="witness-title"><span>5</span>
+<h3>step.norm</h3></div>
+<div class="rank-grid"><div><h4>Low excluded</h4><ul><li><code>attack-negative</code><b>-7800</b></li><li><code>worker-09</code><b>71</b></li></ul></div>
+<div class="center"><h4>Included (7)</h4><p>worker-07 / worker-05 / worker-03 / worker-01 / worker-04 / worker-02 / worker-06</p>
+<strong>trimmed 3/40 <small>approx 0.075</small></strong></div>
+<div><h4>High excluded</h4><ul><li><code>worker-08</code><b>79</b></li><li><code>attack-positive</code><b>4800</b></li></ul></div></div></article></div></section>
+<section id="updates"><h2>Declared fixed-point updates</h2><p class="sub">Values are integers divided by scale 1000. Client IDs carry no trust semantics.</p>
+<div class="table-wrap"><table><thead><tr><th>Client</th><th>encoder.bias</th><th>encoder.scale</th><th>head.bias</th><th>head.weight</th><th>router.balance</th><th>step.norm</th></tr></thead>
+<tbody><tr><td><code>attack-negative</code></td><td>-4000</td><td>-9000</td><td>-3500</td><td>-8500</td><td>-4200</td><td>-7800</td></tr><tr><td><code>attack-positive</code></td><td>9000</td><td>4500</td><td>8000</td><td>5000</td><td>7600</td><td>4800</td></tr><tr><td><code>worker-01</code></td><td>120</td><td>-80</td><td>45</td><td>210</td><td>-30</td><td>75</td></tr><tr><td><code>worker-02</code></td><td>118</td><td>-82</td><td>44</td><td>208</td><td>-29</td><td>77</td></tr><tr><td><code>worker-03</code></td><td>121</td><td>-79</td><td>46</td><td>211</td><td>-31</td><td>74</td></tr><tr><td><code>worker-04</code></td><td>119</td><td>-81</td><td>43</td><td>209</td><td>-30</td><td>76</td></tr><tr><td><code>worker-05</code></td><td>122</td><td>-78</td><td>47</td><td>212</td><td>-32</td><td>73</td></tr><tr><td><code>worker-06</code></td><td>117</td><td>-83</td><td>42</td><td>207</td><td>-28</td><td>78</td></tr><tr><td><code>worker-07</code></td><td>123</td><td>-77</td><td>48</td><td>213</td><td>-33</td><td>72</td></tr><tr><td><code>worker-08</code></td><td>116</td><td>-84</td><td>41</td><td>206</td><td>-27</td><td>79</td></tr><tr><td><code>worker-09</code></td><td>124</td><td>-76</td><td>49</td><td>214</td><td>-34</td><td>71</td></tr></tbody></table></div></section>
+<section id="receipt"><h2>Receipt integrity</h2><p class="sub">Canonical SHA-256 binds the normalized round, every coordinate witness, summary, and append-only ledger.</p>
+<div class="digest"><strong>Round SHA-256</strong><code>174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982</code>
+<strong>Coordinates SHA-256</strong><code>de93deb1e874406cbd897ad8671c2c6cf401d1cb9afd5c2751a55e54552d779a</code>
+<strong>Ledger root</strong><code>253445318fbca758b0844607f38a5a6a352a3d034e6b062c8e89d78bf2f3a14d</code>
+<strong>Receipt SHA-256</strong><code>245a270d423e8b20e9bdf24125fe67a0546772850d54303ad97f32d267170ddf</code></div></section>
+<footer>Generated deterministically by QuorumGrad v0.1.0 · no network, model weights, dataset, or external database required.</footer>
+</main></body></html>

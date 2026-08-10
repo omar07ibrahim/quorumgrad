@@ -1,0 +1,27 @@
+$ quorumgrad aggregate round.json --output receipt.json
+aggregated 11 clients / 6 dimensions / trim 2 each side
+included 42 cells; excluded 24 coordinate cells
+round sha256       174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982
+coordinates sha256 de93deb1e874406cbd897ad8671c2c6cf401d1cb9afd5c2751a55e54552d779a
+ledger root        253445318fbca758b0844607f38a5a6a352a3d034e6b062c8e89d78bf2f3a14d
+receipt sha256     245a270d423e8b20e9bdf24125fe67a0546772850d54303ad97f32d267170ddf
+
+$ quorumgrad verify receipt.json
+verified 6 coordinates by pairwise ranks; 42 included; 24 excluded
+coordinates sha256 de93deb1e874406cbd897ad8671c2c6cf401d1cb9afd5c2751a55e54552d779a
+ledger root        253445318fbca758b0844607f38a5a6a352a3d034e6b062c8e89d78bf2f3a14d
+receipt sha256     245a270d423e8b20e9bdf24125fe67a0546772850d54303ad97f32d267170ddf
+
+$ quorumgrad inspect receipt.json
+DIMENSION        MEAN          TRIMMED       MEDIAN        LOW / HIGH
+------------------------------------------------------------------------------------------------
+encoder.bias     152/275       3/25          3/25          attack-negative,worker-08 / worker-09,attack-positive
+encoder.scale    -261/550      -2/25         -2/25         attack-negative,worker-08 / worker-09,attack-positive
+head.bias        981/2200      9/200         9/200         attack-negative,worker-08 / worker-09,attack-positive
+head.weight      -161/1100     21/100        21/100        attack-negative,worker-08 / worker-09,attack-positive
+router.balance   1563/5500     -213/7000     -3/100        attack-negative,worker-09 / worker-08,attack-positive
+step.norm        -93/440       3/40          3/40          attack-negative,worker-09 / worker-08,attack-positive
+
+$ quorumgrad report receipt.json --output report.html
+wrote verified report report.html
+receipt sha256 245a270d423e8b20e9bdf24125fe67a0546772850d54303ad97f32d267170ddf

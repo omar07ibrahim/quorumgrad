@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560">
+<rect width="1200" height="560" rx="28" fill="#f7f9fc"/>
+<text x="43" y="58" fill="#4f6bed" font-size="14" font-weight="800" letter-spacing="2">REAL COORDINATE WITNESS / encoder.bias</text>
+<text x="43" y="104" fill="#172337" font-size="31" font-weight="900">Total order fixes exact membership</text>
+<text x="43" y="137" fill="#64748b" font-size="14">Sorted by (value_fixed, client_id) · scale 1000 · trim 2 per side</text>
+<g transform="translate(43 205)">
+<rect width="88" height="205" rx="15" fill="#fff0f3" stroke="#ef5f73" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#ef5f73" font-size="10" font-weight="900">01 / LOW</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">-4000</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">attack-negative</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 0</text>
+</g><g transform="translate(144 205)">
+<rect width="88" height="205" rx="15" fill="#fff0f3" stroke="#ef5f73" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#ef5f73" font-size="10" font-weight="900">02 / LOW</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">116</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-08</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 1</text>
+</g><g transform="translate(245 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">03 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">117</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-06</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 2</text>
+</g><g transform="translate(346 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">04 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">118</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-02</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 3</text>
+</g><g transform="translate(447 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">05 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">119</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-04</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 4</text>
+</g><g transform="translate(548 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">06 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">120</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-01</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 5</text>
+</g><g transform="translate(649 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">07 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">121</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-03</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 6</text>
+</g><g transform="translate(750 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">08 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">122</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-05</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 7</text>
+</g><g transform="translate(851 205)">
+<rect width="88" height="205" rx="15" fill="#eaf8f5" stroke="#20a58f" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#20a58f" font-size="10" font-weight="900">09 / KEEP</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">123</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-07</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 8</text>
+</g><g transform="translate(952 205)">
+<rect width="88" height="205" rx="15" fill="#fff7e8" stroke="#e8a23a" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#e8a23a" font-size="10" font-weight="900">10 / HIGH</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">124</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">worker-09</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 9</text>
+</g><g transform="translate(1053 205)">
+<rect width="88" height="205" rx="15" fill="#fff7e8" stroke="#e8a23a" stroke-width="2"/>
+<text x="44" y="28" text-anchor="middle" fill="#e8a23a" font-size="10" font-weight="900">11 / HIGH</text>
+<text x="44" y="80" text-anchor="middle" fill="#172337" font-size="18" font-weight="900">9000</text>
+<text x="44" y="104" text-anchor="middle" fill="#64748b" font-size="10">fixed units</text>
+<text x="44" y="158" text-anchor="middle" fill="#334155" font-size="9" font-weight="700">attack-positive</text>
+<text x="44" y="180" text-anchor="middle" fill="#64748b" font-size="9">rank 10</text>
+</g>
+<text x="43" y="462" fill="#172337" font-size="16" font-weight="800">trimmed mean 3/25 · ordinary mean 152/275 · median 3/25</text>
+<text x="43" y="501" fill="#64748b" font-size="13">Client IDs are deterministic tie-breakers only; exclusion membership is not attacker identification.</text>
+</svg>

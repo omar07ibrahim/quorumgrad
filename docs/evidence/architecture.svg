@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1022"/><stop offset="1" stop-color="#253168"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#83eee5"/></marker></defs>
+<rect width="1200" height="530" rx="28" fill="url(#bg)"/>
+<text x="42" y="60" fill="#83eee5" font-size="14" font-weight="800" letter-spacing="2">QUORUMGRAD / DUAL-ALGORITHM WORKFLOW</text>
+<text x="42" y="108" fill="#ffffff" font-size="34" font-weight="800">Every trimmed coordinate leaves a receipt</text>
+<g transform="translate(42 170)">
+<rect width="198" height="194" rx="24" fill="#182445" stroke="#65ded7" stroke-width="2"/>
+<text x="20" y="36" fill="#83eee5" font-size="13" font-weight="800">01</text>
+<text x="20" y="79" fill="#ffffff" font-size="14" font-weight="800">BOUNDED ROUND</text>
+<text x="20" y="119" fill="#c7d3eb" font-size="11">11 clients · 6 coordinates</text>
+</g><g transform="translate(273 170)">
+<rect width="198" height="194" rx="24" fill="#182445" stroke="#65ded7" stroke-width="2"/>
+<text x="20" y="36" fill="#83eee5" font-size="13" font-weight="800">02</text>
+<text x="20" y="79" fill="#ffffff" font-size="14" font-weight="800">ANALYZER SORT</text>
+<text x="20" y="119" fill="#c7d3eb" font-size="11">ordered (value, client_id) pairs</text>
+</g><g transform="translate(504 170)">
+<rect width="198" height="194" rx="24" fill="#182445" stroke="#ffb454" stroke-width="2"/>
+<text x="20" y="36" fill="#83eee5" font-size="13" font-weight="800">03</text>
+<text x="20" y="79" fill="#ffffff" font-size="14" font-weight="800">RANK WITNESSES</text>
+<text x="20" y="119" fill="#c7d3eb" font-size="11">42 included · 24 excluded</text>
+</g><g transform="translate(735 170)">
+<rect width="198" height="194" rx="24" fill="#182445" stroke="#65ded7" stroke-width="2"/>
+<text x="20" y="36" fill="#83eee5" font-size="13" font-weight="800">04</text>
+<text x="20" y="79" fill="#ffffff" font-size="14" font-weight="800">HASHED RECEIPT</text>
+<text x="20" y="119" fill="#c7d3eb" font-size="11">18 append-only ledger entries</text>
+</g><g transform="translate(966 170)">
+<rect width="198" height="194" rx="24" fill="#182445" stroke="#65ded7" stroke-width="2"/>
+<text x="20" y="36" fill="#83eee5" font-size="13" font-weight="800">05</text>
+<text x="20" y="79" fill="#ffffff" font-size="14" font-weight="800">PAIRWISE REPLAY</text>
+<text x="20" y="119" fill="#c7d3eb" font-size="11">independent O(n²) rank counts</text>
+</g><path d="M 240 267 H 274" stroke="#83eee5" stroke-width="3" marker-end="url(#arrow)"/><path d="M 471 267 H 505" stroke="#83eee5" stroke-width="3" marker-end="url(#arrow)"/><path d="M 702 267 H 736" stroke="#83eee5" stroke-width="3" marker-end="url(#arrow)"/><path d="M 933 267 H 967" stroke="#83eee5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="42" y="438" fill="#b8c7e0" font-size="13">Round 174a0d45ba46a0328c… · Coordinates de93deb1e874406cbd…</text>
+<text x="42" y="474" fill="#e5eaf6" font-size="14">Analyzer sorting and verifier pairwise ranks share the contract—not aggregation code.</text>
+</svg>
