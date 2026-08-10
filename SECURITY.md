@@ -24,7 +24,7 @@ You should receive an acknowledgement within 72 hours. Triage and remediation ti
 
 ## Security boundaries
 
-QuorumGrad processes bounded local JSON and creates local outputs. It performs no application-runtime network requests and has no third-party runtime dependencies. This reduces attack surface but does not authenticate clients, validate upstream updates, protect the host Python environment, provide secure aggregation, or preserve privacy.
+QuorumGrad processes bounded local JSON and creates new receipt/report outputs exclusively with owner-only `0600` permissions. It performs no application-runtime network requests and has no third-party runtime dependencies. This reduces attack surface but does not authenticate clients, validate upstream updates, protect the host Python environment, provide secure aggregation, or preserve privacy.
 
 The independent verifier establishes receipt integrity for the declared round. It does not prove that updates are truthful or that an aggregate is safe to deploy.
 

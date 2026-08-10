@@ -47,7 +47,7 @@ quorumgrad inspect receipt.json
 quorumgrad report receipt.json --output report.html
 ```
 
-The CLI refuses to replace an existing output file. Inputs are bounded local JSON; the application makes no network requests.
+The CLI refuses to replace an existing output file and creates receipt/report outputs with owner-only `0600` permissions. Inputs are bounded local JSON; the application makes no network requests.
 
 ![Real CLI transcript from the installed wheel](docs/evidence/quorumgrad-cli.png)
 

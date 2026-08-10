@@ -21,5 +21,9 @@ All notable changes to QuorumGrad are documented here. The format follows Keep a
 - digest-pinned networkless browser evidence workflow;
 - transparent preservation of the repository’s empty 2021 RDP origin.
 
+### Security
+
+- receipt and report outputs are created exclusively with owner-only `0600` permissions and never replace existing files.
+
 [Unreleased]: https://github.com/omar07ibrahim/quorumgrad/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/omar07ibrahim/quorumgrad/releases/tag/v0.1.0
