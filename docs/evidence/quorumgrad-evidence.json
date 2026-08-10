@@ -13,14 +13,14 @@
       "sha256": "c06367fb84fa6f4cd4ae403305019ed6f80bd8b06cd6cc901f8fd0f1bc0e0501"
     },
     {
-      "bytes": 103159,
+      "bytes": 116866,
       "dimensions": [
         1180,
-        650
+        780
       ],
       "media_type": "image/png",
       "path": "docs/evidence/quorumgrad-cli.png",
-      "sha256": "56896978732dd898ba7a7aa242b199da755b1c4cf3fe67e00284fd34ecd8e855"
+      "sha256": "005d4a4f3d47a118a12ed6976fa39b262c4e1860d2009d32335204709a06365c"
     },
     {
       "bytes": 1898,
@@ -125,8 +125,8 @@
     "trim_each_side": 2
   },
   "round_sha256": "174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982",
-  "source_revision": "34af9cebc7190da82dbbbfbb9708f929e6153607",
-  "source_tree": "c2d34acb8191ed84f860dd7e92c317deb90baff3",
+  "source_revision": "7569d6999d472a6fb54def1638f9a681b858540d",
+  "source_tree": "729e20134917868bd91e0eadb1764ee8217842ff",
   "sources": [
     {
       "bytes": 7994,
@@ -166,7 +166,7 @@
     {
       "bytes": 30651,
       "path": "tools/capture_evidence.py",
-      "sha256": "0781af9357d2e54f8f6f422aa1e200af1655a3d8b9ddef5faafba3b4923d3827"
+      "sha256": "1ade89fee498daf3e410e4d8c5bb03951909878ef8fa067dd67c50e81bf273f4"
     },
     {
       "bytes": 370,
