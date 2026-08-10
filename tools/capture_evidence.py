@@ -214,7 +214,7 @@ def capture(output_root: Path, container_image: str) -> None:
         mobile.close()
 
         terminal = browser.new_context(
-            viewport={"width": 1180, "height": 650},
+            viewport={"width": 1180, "height": 780},
             device_scale_factor=1,
             reduced_motion="reduce",
         )
@@ -370,7 +370,7 @@ def verify_visuals(output_root: Path) -> None:
     expected_png = {
         "quorumgrad-report.png": (1440, 1000),
         "quorumgrad-report-mobile.png": (390, 844),
-        "quorumgrad-cli.png": (1180, 650),
+        "quorumgrad-cli.png": (1180, 780),
     }
     for name, dimensions in expected_png.items():
         with Image.open(evidence / name) as image:
