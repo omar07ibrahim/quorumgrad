@@ -92,9 +92,7 @@ def test_each_coordinate_exposes_complete_partition(receipt: dict[str, object]) 
         assert len(included) == 7
         assert len(high) == 2
         assert ranked == low + included + high
-        pairs = [
-            (cast(int, item["value_fixed"]), str(item["client_id"])) for item in ranked
-        ]
+        pairs = [(cast(int, item["value_fixed"]), str(item["client_id"])) for item in ranked]
         assert pairs == sorted(pairs)
         assert len(str(coordinate["coordinate_sha256"])) == 64
 
