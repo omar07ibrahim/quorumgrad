@@ -1,0 +1,137 @@
+{
+  "format": "quorumgrad.round.v1",
+  "round_id": "sign-flip-incident",
+  "scale": 1000,
+  "trim": 2,
+  "dimensions": [
+    "encoder.bias",
+    "encoder.scale",
+    "head.bias",
+    "head.weight",
+    "router.balance",
+    "step.norm"
+  ],
+  "clients": [
+    {
+      "client_id": "worker-01",
+      "update": [
+        120,
+        -80,
+        45,
+        210,
+        -30,
+        75
+      ]
+    },
+    {
+      "client_id": "worker-02",
+      "update": [
+        118,
+        -82,
+        44,
+        208,
+        -29,
+        77
+      ]
+    },
+    {
+      "client_id": "worker-03",
+      "update": [
+        121,
+        -79,
+        46,
+        211,
+        -31,
+        74
+      ]
+    },
+    {
+      "client_id": "worker-04",
+      "update": [
+        119,
+        -81,
+        43,
+        209,
+        -30,
+        76
+      ]
+    },
+    {
+      "client_id": "worker-05",
+      "update": [
+        122,
+        -78,
+        47,
+        212,
+        -32,
+        73
+      ]
+    },
+    {
+      "client_id": "worker-06",
+      "update": [
+        117,
+        -83,
+        42,
+        207,
+        -28,
+        78
+      ]
+    },
+    {
+      "client_id": "worker-07",
+      "update": [
+        123,
+        -77,
+        48,
+        213,
+        -33,
+        72
+      ]
+    },
+    {
+      "client_id": "worker-08",
+      "update": [
+        116,
+        -84,
+        41,
+        206,
+        -27,
+        79
+      ]
+    },
+    {
+      "client_id": "worker-09",
+      "update": [
+        124,
+        -76,
+        49,
+        214,
+        -34,
+        71
+      ]
+    },
+    {
+      "client_id": "attack-positive",
+      "update": [
+        9000,
+        4500,
+        8000,
+        5000,
+        7600,
+        4800
+      ]
+    },
+    {
+      "client_id": "attack-negative",
+      "update": [
+        -4000,
+        -9000,
+        -3500,
+        -8500,
+        -4200,
+        -7800
+      ]
+    }
+  ]
+}
