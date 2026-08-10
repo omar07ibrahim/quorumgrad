@@ -125,8 +125,8 @@
     "trim_each_side": 2
   },
   "round_sha256": "174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982",
-  "source_revision": "7569d6999d472a6fb54def1638f9a681b858540d",
-  "source_tree": "729e20134917868bd91e0eadb1764ee8217842ff",
+  "source_revision": "725f5af2abaad001660ba7b9804ce8cdd0a3e78e",
+  "source_tree": "660a6ed9957302c4ac73dbecc1db550c65ccfa47",
   "sources": [
     {
       "bytes": 7994,
@@ -191,7 +191,7 @@
     {
       "bytes": 5467,
       "path": "src/quorumgrad/cli.py",
-      "sha256": "696a24bb13135d7c48bd54e00edb8033f210b31eaf42661ff20e4360b2449668"
+      "sha256": "1802e8777c060eb5874de252691e1b9d5486f2389352c6bf8b475db82d3e84c2"
     },
     {
       "bytes": 950,
