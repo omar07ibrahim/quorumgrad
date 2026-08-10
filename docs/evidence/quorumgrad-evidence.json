@@ -125,8 +125,8 @@
     "trim_each_side": 2
   },
   "round_sha256": "174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982",
-  "source_revision": "8bb8a1e193afe6a959bdd2b0a7cb959981181adc",
-  "source_tree": "4ea93c5b618e81a12a93e98106d966ad2c506bfe",
+  "source_revision": "34af9cebc7190da82dbbbfbb9708f929e6153607",
+  "source_tree": "c2d34acb8191ed84f860dd7e92c317deb90baff3",
   "sources": [
     {
       "bytes": 7994,
@@ -164,9 +164,9 @@
       "sha256": "31856330ca8d4643c7aa86c3766ec1a4b879e664f280ee205fb793c9d724fc3c"
     },
     {
-      "bytes": 30430,
+      "bytes": 30651,
       "path": "tools/capture_evidence.py",
-      "sha256": "a5531ebc40365a75d09ed8730042c910693502f623084b622e60183b566fb985"
+      "sha256": "0781af9357d2e54f8f6f422aa1e200af1655a3d8b9ddef5faafba3b4923d3827"
     },
     {
       "bytes": 370,
