@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use QuorumGrad, please cite this software."
+title: "QuorumGrad: independently replayable fixed-point robust aggregation receipts"
+type: software
+authors:
+  - given-names: Omar
+    family-names: Ibrahim
+    email: 31526072+omar07ibrahim@users.noreply.github.com
+repository-code: "https://github.com/omar07ibrahim/quorumgrad"
+url: "https://github.com/omar07ibrahim/quorumgrad"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-08-10
