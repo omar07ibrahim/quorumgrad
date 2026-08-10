@@ -1,0 +1,13 @@
+{
+  "format": "quorumgrad.legacy-empty-repository.v1",
+  "repository_id": 394582438,
+  "original_name": "RDP",
+  "original_created_at": "2021-08-10T08:38:41Z",
+  "inspection_date": "2026-08-10",
+  "repository_size_kib": 0,
+  "refs": 0,
+  "branches": 0,
+  "commits": 0,
+  "blobs": 0,
+  "statement": "No source tree existed before the QuorumGrad repurpose."
+}
