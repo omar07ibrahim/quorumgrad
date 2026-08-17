@@ -125,8 +125,8 @@
     "trim_each_side": 2
   },
   "round_sha256": "174a0d45ba46a0328c4ce527d150ebc33bacffdc913b03f47b24608e0906e982",
-  "source_revision": "725f5af2abaad001660ba7b9804ce8cdd0a3e78e",
-  "source_tree": "660a6ed9957302c4ac73dbecc1db550c65ccfa47",
+  "source_revision": "afa90f762aaa46150755ecf7d055eadbfbb2f486",
+  "source_tree": "1748699f844f6a953a6eb7e02f567b7b3bc1790c",
   "sources": [
     {
       "bytes": 7994,
@@ -136,7 +136,7 @@
     {
       "bytes": 1847,
       "path": "pyproject.toml",
-      "sha256": "5700d7b34cf1a3fa05e1e4d13a397fcd378921e8cd0079ebde283e63c46798df"
+      "sha256": "fe5384aca34af4a3da0685a76b2b8a65d88903b2b09907361edbb0df14a5efe7"
     },
     {
       "bytes": 394,
@@ -146,12 +146,12 @@
     {
       "bytes": 7250,
       "path": "requirements/evidence-browser.txt",
-      "sha256": "6aa5ee3942f6dc461d35c87a3853c29a5c2a3f86bdb9fe5688bc042fe6cfc782"
+      "sha256": "e5404724e8db4f9a6adc62a7a2cced64ab7a460eef39820728195fca7e921216"
     },
     {
       "bytes": 139,
       "path": "requirements/quality.in",
-      "sha256": "4fda60e9a15befda21c360eba93716d227e2269f7c03d0f5de57bc1e0925c6fc"
+      "sha256": "b7cc3e1ab2e2345b7ad859438d47dd26f3a6a3118bdf67c69accc8560ebb951b"
     },
     {
       "bytes": 35224,
